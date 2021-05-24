@@ -22,7 +22,6 @@ ADD https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.66/bcprov-j
 RUN addgroup --gid 1000 --system java && \
     adduser --uid 1000 --system java --gid 1000  && \
     mkdir -p /etc/keystore && \
-    chown -R java:java /home/java /app /etc/keystore && \
-    chmod +x /app/run.sh /app/csca_to_ks.sh
+    chown -R java:java /home/java /app /etc/keystore
 
 ENTRYPOINT /app/run.sh
