@@ -27,5 +27,5 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64/v8
           tags: |
-            ghcr.io/arctech-solutions-limited:${{ github.ref }}
-            ghcr.io/arctech-solutions-limited:latest
+            ghcr.io/arctech-solutions-limited/jdk:${{ github.ref }}
+            ghcr.io/arctech-solutions-limited/jdk:latest
